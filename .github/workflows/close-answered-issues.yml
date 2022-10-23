@@ -2,7 +2,8 @@ name: "Close answered issues"
 on:
   schedule:
 #     - cron: "00 10 * * *"
-    - cron: "37 * * * *"
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
 env:
   days-before-stale: 30
   days-before-close: 7
