@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 env:
   days-before-stale: 0
-  days-before-close: 7
+  days-before-close: 0
 jobs:
   stale:
     runs-on: ubuntu-latest
