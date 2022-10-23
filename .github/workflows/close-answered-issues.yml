@@ -1,6 +1,6 @@
 name: "Close answered issues"
 on:
-  schedule:
+#   schedule:
 #     - cron: "00 10 * * *"
 #     - cron: "*/5 * * * *"
   workflow_dispatch:
