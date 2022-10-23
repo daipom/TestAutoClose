@@ -8,7 +8,7 @@ env:
   days-before-stale: 0
   days-before-close: 0
 jobs:
-  stale:
+  mark-stale-and-close:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/stale@v6
@@ -21,3 +21,4 @@ jobs:
           close-issue-message: "This issue was automatically closed because of stale in ${{ env.days-before-close }} days"
           stale-issue-label: "stale"
           only-labels: "answered"
+          close-issue-reason: "completed"
